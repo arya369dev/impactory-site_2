@@ -17,7 +17,7 @@ if(host&&button){
  let animator=null,enabled=false,drag=false,previous=0,rotation=0;
  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/Math.max(1,h);camera.updateProjectionMatrix()};
  new ResizeObserver(resize).observe(host);resize();
- new GLTFLoader().load('./models/arya_patole_3d.glb',gltf=>{
+ new GLTFLoader().load('./arya_patole_3d.glb',gltf=>{
   const model=gltf.scene;scene.add(model);model.position.set(0,-.75,0);animator=makeCharacterAnimator(model,particles);
  },undefined,error=>{console.warn('3D model unavailable; original portrait remains visible.',error);button.disabled=true;button.textContent='3D UNAVAILABLE'});
  button.addEventListener('click',()=>{
