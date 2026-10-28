@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f4e9" />
+  <meta name="description" content="Arya Patole — Social Media Designer & Web Designer. An experimental creative portfolio." />
+  <title>Arya Patole — Design in Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+  <script type="module" src="scene.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor-core">✦</span><span class="cursor-orbit"></span><span class="cursor-label">EXPLORE</span></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand magnetic" href="#home" aria-label="Arya Patole home">ARYA<span class="brand-spark">✳</span><small>DESIGN LAB</small></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#about">ABOUT</a><a href="#work">WORK</a><a href="#lab">DESIGN LAB</a><a href="#contact">CONTACT</a></nav>
+    <a class="nav-cta magnetic" href="#contact">LET'S TALK <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> AVAILABLE FOR CREATIVE COLLABORATIONS <span class="eyebrow-line"></span> EST. 2026</div>
+        <p class="hero-kicker">HELLO, I'M ARYA PATOLE <span class="spark">✳</span></p>
+        <h1>I MAKE <em>IDEAS</em><br /><span class="stroke-word">LOOK</span> <span class="electric">ALIVE.</span></h1>
+        <p class="hero-desc">Social Media Designer <span class="plus">✦</span> Web Designer<br />Creating scroll-stopping visuals and digital experiences with personality.</p>
+        <div class="hero-actions"><a class="primary-btn magnetic" href="#work">EXPLORE MY WORK <span>↗</span></a><a class="text-link magnetic" href="#about">MEET THE DESIGNER <span>↓</span></a></div>
+        <div class="hero-footnote"><span>SCROLL TO EXPLORE</span><span class="line"></span><span>01 / 04</span></div>
+      </div>
+      <div class="hero-stage" id="heroStage" aria-label="Cinematic technology-inspired portrait reveal of Arya Patole">
+        <div class="stage-arch"></div><div class="stage-halo"></div><div class="stage-halo halo-two"></div>
+        <div class="stage-caption stage-caption-top">[ HUMAN × IMAGINATION ]</div>
+        <div class="portrait-shell" id="portraitShell"><div class="portrait-backlight"></div><img class="portrait" src="assets/arya-portrait.jpg" alt="Portrait of Arya Patole" /><div class="portrait-sheen"></div></div>
+        <canvas id="particleCanvas" aria-hidden="true"></canvas>
+        <div id="threeStage" class="three-stage" aria-label="Interactive 3D character scene"></div>
+        <button id="mode3d" class="mode3d" type="button" aria-pressed="false">✧ EXPLORE 3D</button>
+        <div class="platform"><div class="platform-rim"></div><div class="platform-core"></div><div class="platform-center"></div></div>
+        <div class="stage-status"><span class="status-led"></span> NANO ASSEMBLY <strong id="assemblyStatus">INITIALIZING</strong></div>
+        <div class="hud-label hud-left">X 073.2<br />Y 041.9<br />DEPTH 3D</div><div class="hud-label hud-right">CREATIVE<br />SYSTEM / 01</div>
+        <button class="replay-btn magnetic" id="replayBtn" aria-label="Replay character reveal">↻ <span>REPLAY REVEAL</span></button>
+      </div>
+      <div class="hero-side-note">DESIGN IS NOT JUST WHAT YOU SEE. IT'S WHAT YOU FEEL.</div>
+    </section>
+    <div class="marquee" aria-label="Design disciplines"><div class="marquee-track">SOCIAL MEDIA DESIGN <b>✳</b> WEB EXPERIENCES <b>✳</b> VISUAL STORYTELLING <b>✳</b> MOTION & MAGIC <b>✳</b> SOCIAL MEDIA DESIGN <b>✳</b> WEB EXPERIENCES <b>✳</b> VISUAL STORYTELLING <b>✳</b> MOTION & MAGIC <b>✳</b></div></div>
+    <section class="about section-pad" id="about"><div class="section-index">[ 01 — THE HUMAN BEHIND THE PIXELS ]</div><div class="about-layout"><div><h2>NOT JUST<br /><em>PRETTY</em> PIXELS<span class="orange-dot">.</span></h2><div class="about-decoration">✺</div></div><div class="about-text"><p>I'm <strong>Arya Patole</strong>, a Social Media Designer and Web Designer who believes every brand deserves a visual world of its own.</p><p>I blend bold editorial graphics, playful experimentation, and thoughtful digital interactions to turn ordinary screens into memorable experiences.</p><div class="skill-tags"><span>VISUAL IDENTITY</span><span>SOCIAL CAMPAIGNS</span><span>WEB DESIGN</span><span>CREATIVE DIRECTION</span><span>MOTION CONCEPTS</span></div></div></div></section>
+    <section class="work section-pad" id="work"><div class="section-index">[ 02 — SELECTED CREATIVE WORLDS ]</div><div class="section-title-row"><h2>THE WORK<span class="orange-dot">.</span></h2><p>A selection of brands and ideas I've worked with. <br />Select a card to discover its creative direction.</p></div><div class="project-grid">
+      <article class="project-card project-nischint tilt" tabindex="0" data-project="Nischint" data-detail="Safety-first brand and digital experience concepts."><div class="project-top"><span>01 / BRAND + DIGITAL</span><span>↗</span></div><div class="project-art art-orbit"><div class="art-ring"></div><div class="art-heart">✳</div></div><div class="project-bottom"><h3>NISCHINT</h3><p>Care, connection & creative clarity</p></div></article>
+      <article class="project-card project-nagarik tilt" tabindex="0" data-project="Nagarik" data-detail="Bold civic communication and engaging digital storytelling."><div class="project-top"><span>02 / SOCIAL + WEB</span><span>↗</span></div><div class="project-art art-city"><span>✳</span><div class="city-bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="project-bottom"><h3>NAGARIK</h3><p>Design for a louder citizen voice</p></div></article>
+      <article class="project-card project-starwire tilt" tabindex="0" data-project="Starwire" data-detail="Entertainment intelligence visual communication and digital design."><div class="project-top"><span>03 / CREATIVE SYSTEMS</span><span>↗</span></div><div class="project-art art-star">✴<span>STARWIRE / WORLD</span></div><div class="project-bottom"><h3>STARWIRE</h3><p>Where entertainment meets intelligence</p></div></article>
+      <article class="project-card project-seva tilt" tabindex="0" data-project="Nischint Seva Foundation" data-detail="Human-centered awareness and community campaign design."><div class="project-top"><span>04 / SOCIAL IMPACT</span><span>↗</span></div><div class="project-art art-sun"><div class="sun-disc">✺</div></div><div class="project-bottom"><h3>NISCHINT SEVA</h3><p>Design that moves people to care</p></div></article>
+      <article class="project-card project-just tilt" tabindex="0" data-project="Just Video" data-detail="Film production website and cinematic portfolio experiences."><div class="project-top"><span>05 / WEB EXPERIENCE</span><span>↗</span></div><div class="project-art art-film"><span>JUST.</span><div class="film-strips"></div></div><div class="project-bottom"><h3>JUST VIDEO</h3><p>Stories made for the big screen</p></div></article>
+      <article class="project-card project-bigg tilt" tabindex="0" data-project="Biggtime Entertainment" data-detail="Entertainment-led visual identity and creative explorations."><div class="project-top"><span>06 / ENTERTAINMENT</span><span>↗</span></div><div class="project-art art-bigg"><span>BIGG<br />TIME<span class="mini-star">✦</span></span></div><div class="project-bottom"><h3>BIGGTIME</h3><p>Big ideas. Bigger presence.</p></div></article>
+    </div><p class="project-note">PROJECT CARDS ARE INTERACTIVE PREVIEWS — CASE STUDY LINKS CAN BE ADDED WHEN READY.</p></section>
+    <section class="lab section-pad" id="lab"><div class="section-index">[ 03 — THE DESIGN PLAYGROUND ]</div><div class="lab-layout"><div class="lab-copy"><h2>ORDER<br />MEETS <em>CHAOS.</em></h2><p>Two visual worlds. One creative instinct. From timeless editorial elegance to unapologetically loud collage graphics.</p><div class="lab-chips"><span>NEOCLASSICAL</span><span>SCRAPBOOK</span><span>KINETIC TYPE</span><span>FUTURISTIC HUD</span></div></div><div class="reference-stack"><figure class="reference-card ref-classical tilt"><img src="assets/neoclassical-reference.jpg" alt="Neoclassical editorial graphic design inspiration" loading="lazy" /><figcaption>01 / EDITORIAL ELEGANCE</figcaption></figure><figure class="reference-card ref-scrap tilt"><img src="assets/scrapbook-reference.jpg" alt="Expressive scrapbook collage graphic design inspiration" loading="lazy" /><figcaption>02 / CREATIVE REBELLION</figcaption></figure></div></div><p class="reference-credit">VISUAL REFERENCES PROVIDED BY THE CLIENT — SHOWN AS DESIGN INSPIRATION, NOT CLAIMED AS ORIGINAL PORTFOLIO WORK.</p></section>
+    <section class="contact section-pad" id="contact"><div class="section-index">[ 04 — LET'S MAKE SOMETHING MATTER ]</div><div class="contact-inner"><span class="contact-star">✳</span><h2>GOT A <em>WILD</em><br />IDEA<span>?</span></h2><p>Let's turn your next big idea into something people can't scroll past.</p><a class="contact-button magnetic" href="mailto:hello@example.com?subject=Let's%20collaborate%20with%20Arya">START A CONVERSATION <span>↗</span></a><small>UPDATE THE EMAIL ADDRESS IN INDEX.HTML BEFORE PUBLISHING.</small></div></section>
+  </main>
+  <footer><a href="#home">ARYA PATOLE <span>✳</span></a><p>DESIGNED TO BE FELT. © <span id="year"></span></p><a href="#home">BACK TO TOP ↑</a></footer>
+  <dialog id="projectDialog" class="project-dialog"><button class="dialog-close" id="dialogClose" aria-label="Close project preview">✕</button><p class="dialog-kicker">CREATIVE PROJECT / PREVIEW</p><h2 id="dialogTitle"></h2><p id="dialogDescription"></p><p class="dialog-hint">Full project case study coming soon.</p></dialog>
+</body>
+</html>
